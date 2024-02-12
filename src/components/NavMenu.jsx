@@ -29,9 +29,9 @@ const NavMenu = () => {
 			animate='enter'
 			exit='exit'
 			initial='initial'
-			className='fixed right-0 bg-black  text-white '
+			className='fixed right-0 bg-black  text-white flex w-full justify-center items-center'
 		>
-			<div className='p-10 justify-between flex '>
+			<div className='p-10 justify-between flex my-24 '>
 				<div className='flex flex-col text-3xl '>
 					<div className='flex flex-col justify-center items-center  '>
 						<motion.div
@@ -40,20 +40,23 @@ const NavMenu = () => {
 							exit='exit'
 							initial='initial'
 						>
-							<a href='/' className='font-[Oswald] '>
-								OUTBACK EDGE STUDIO
-							</a>
+						
 						</motion.div>
 						<div className=' flex flex-col justify-center items-center gap-8 -mt-14'>
+						<h1 className="text-3xl font-['Oswald'] text-white font-bold">
+							OUTBACK EDGE STUDIO
+						</h1>
 							{navItems.map((item) => {
 								return (
+									
 									<motion.div
 										variants={slide}
 										animate='enter'
 										exit='exit'
 										initial='initial'
 									>
-										<a href={item.href} className='text-white font-medium '>
+										
+										<a href={item.href} className="text-white font-medium font-['Infer'] ">
 											{item.title}
 										</a>
 									</motion.div>

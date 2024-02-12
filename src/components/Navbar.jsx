@@ -2,7 +2,7 @@ import {  useState } from "react";
 
 import "../styles/animations.css";
 import NavMenu from "./NavMenu";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence } from 'framer-motion';
 
 
 
@@ -15,20 +15,21 @@ const Navbar = () => {
 		<nav className='w-full'>
 			{/* Mobile View */}
 			<div
-				className={`lg:hidden fixed flex xl:py-5 px-3  w-full h-[4.5rem] z-50 transition-colors ${
-					isActive ? "opacity-85" : "opacity-75"
+				className={`lg:hidden fixed flex xl:py-5 px-3 w-full h-[4.5rem] z-50 transition-colors ${
+					isActive ? "opacity-90" : "opacity-75"
 				}`}
 			>
-				<div className='flex w-full justify-between items-center mx-4'>
-				<a href='/' className='flex items-center text-5xl font-[Oswald] '>
+				<div className='flex w-full justify-between items-center mx-4 '>
+						<a href='/' className='flex items-center text-2xl font-[Oswald] text-white  mt-8'>
 							OUTBACK EDGE STUDIO
 						</a>
 
 					<div
 						onClick={() => {
+							console.log('clicked')
 							setIsActive(!isActive);
 						}}
-						className={`${"button "} `}
+						className={`${"button cursor-pointer"} `}
 					>
 						<div
 							id='nav-icon'
@@ -38,6 +39,8 @@ const Navbar = () => {
 				</div>
 				<AnimatePresence mode='wait'>{isActive && <NavMenu />}</AnimatePresence>
 			</div>
+
+			
 			{/* Desktop View */}
 			<div className="hidden fixed left-0 w-full p-8 z-10  h-18 max-h-20  lg:flex items-center justify-center  bg-[#020202d1] text-white mix-blend-luminosity font-['Inter']"  >
 				<ul className='relative flex justify-center align-middle items-center gap-16 '> 

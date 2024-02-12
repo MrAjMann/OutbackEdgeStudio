@@ -22,14 +22,14 @@ export const menuSlide = {
 
 export const slide = {
 	initial: {
-		x: "80px",
+		x: "-10px",
 	},
 	enter: {
 		x: "0px",
 		transition: { duration: 1, ease: [0.76, 0, 0.24, 1] },
 	},
 	exit: {
-		x: "250%",
+		x: "550%",
 		transition: { duration: 0.3, ease: [0.76, 0, 0.24, 1] },
 	},
 };
