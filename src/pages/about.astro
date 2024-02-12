@@ -1,0 +1,86 @@
+---
+import Layout from "../layouts/Layout.astro"
+import heroImage from "../assets/Fake-Justin.webp";
+import { Image } from "astro:assets";
+---
+
+<Layout title="OUTBACK EDGE STUDIO - ABOUT US">
+    <main>
+		<section class='w-full '>
+            <Image src={heroImage} widths={[300,  1060,  1460,  1780,  2048, heroImage.width]} sizes="100vw" loading="eager"
+            alt="OUTBACK EDGE STUDIO" class='w-full object-cover md:h-[50vh] lg:h-[70vh] 2xl-[120vh]  bg-blend-darken   grayscale ' />
+            <div class="absolute top-1/3 left-1/2 -translate-x-1/2  -translate-y-1/2 flex justify-center ">
+                <h1 class="text-white mt-48 mb-28 text-7xl font-['Infer'] ">ABOUT US</h1>
+            </div>
+		</section>
+<!-- Top -->
+
+        <div>   
+            <li class=`list-none xl:mx-48 my-6 xl:my-16 flex flex-col xl:flex-row gap-0 xl:gap-48 `>
+                <div class="overflow-hidden flex justify-center">
+                    <Image src={heroImage} alt="Photo of Kelly" class="min-w-[300px] aspect-[9/16] px-12 lg:px-0  max-h-[360px] h-full max-w-[400px]   sm:max-h-[460px]  rounded-md"  >
+                    </div>
+                    <div class="my-4 px-12 xl:px-0 flex flex-col justify-center align-middle items-center xl:items-start xl:max-w-lg"> 	
+                        
+                        
+                        <p class="flex justify-center items-center my-4 font-normal max-w-xl min-h-[150px]">
+                            Hi, I'm Jack, the founder and master barber at "Outback Edge Barber Shop," where I specialize in an exceptionally niche area of men's hairstyling and grooming. With a dedication that has spanned over 20 years, my expertise lies not only in traditional barbering but also in the unique art of historical and period hairstyling.
+                            
+                        </p>
+                        <p class="flex justify-center items-center my-4 font-normal max-w-xl min-h-[150px]">
+                            Starting my career in Cairns, I shifted to Yeppoon in 2015, making a name for myself at Yeppoon Hair Haven. After seven years, I chose Toowoomba for its tranquil lifestyle, diverging from my coastal roots.
+                    
+                </p>
+                
+            </div>
+        </li>
+    </div>
+
+
+
+<!-- Middle -->
+
+        <div>   
+
+            <li class=`list-none xl:mx-48 my-6 xl:my-16 flex flex-col xl:flex-row-reverse gap-0 xl:gap-48 `>
+                <div class="overflow-hidden flex justify-center">
+                    <Image src={heroImage} alt="Photo of Kelly" class="min-w-[300px] aspect-[9/16] px-12 lg:px-0  max-h-[360px] h-full max-w-[400px]   sm:max-h-[460px]  rounded-md"  >
+                    </div>
+                    <div class="my-4 px-12 xl:px-0 flex flex-col justify-center align-middle items-center xl:items-start xl:max-w-lg"> 	
+                        
+                        
+                        <p class="flex justify-center items-center my-4 font-normal max-w-xl min-h-[150px]">
+                            One of my most distinctive skills, honed through my experiences in Cairns, is creating authentic hairstyles that reflect different historical periods. This rare specialty has been a passion of mine, allowing me to recreate styles from the Victorian era, the Roaring Twenties, or even the rockabilly looks of the 1950s with precision and flair. This unique offering is particularly popular for themed weddings, film and theatre productions, and clients seeking a haircut with a touch of historical elegance.
+                        </p>
+                        <p class="flex justify-center items-center my-4 font-normal max-w-xl min-h-[150px]">
+                            At Outback Edge Barber Shop, it’s all about celebrating the diversity of men's hair with a twist of historical charm. I ensure that each client's experience is tailored to their individual needs, whether they're looking for a classic contemporary cut or a dive into the past with a period-specific style.
+                </p>
+                
+            </div>
+        </li>
+    </div>
+
+
+    <!-- Bottom -->
+    
+        <div>   
+
+            <li class=`list-none xl:mx-48 my-6 xl:my-16 flex flex-col xl:flex-row gap-0 xl:gap-48 `>
+                <div class="overflow-hidden flex justify-center">
+                    <Image src={heroImage} alt="Photo of Kelly" class="min-w-[300px] aspect-[9/16] px-12 lg:px-0  max-h-[360px] h-full max-w-[400px]   sm:max-h-[460px]  rounded-md"  >
+                    </div>
+                    <div class="my-4 px-12 xl:px-0 flex flex-col justify-center align-middle items-center xl:items-start xl:max-w-lg"> 	
+                        
+                        
+                        <p class="flex justify-center items-center my-4 font-normal max-w-xl min-h-[150px]">
+                            My clients value the rare combination of traditional barbering skills and my unique flair for historical hairstyling, making each visit to my shop an exclusive and engaging experience.
+                        </p>
+                        <p class="flex justify-center items-center my-4 font-normal max-w-xl min-h-[150px]">
+                            Step into Outback Edge Barber Shop for a one-of-a-kind grooming experience where the past and present blend seamlessly, delivering exceptional results and a glimpse into the rich history of men's hairstyling. </p>
+                
+            </div>
+        </li>
+    </div>
+        
+    </main>
+</Layout>

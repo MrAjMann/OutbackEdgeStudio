@@ -1,0 +1,73 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Testimonials from "../components/Testimonials.astro";
+
+import heroImage from "../assets/bg-barbershop.webp";
+import testOne from "../assets/testimonials-issac-adams.webp";
+import testTwo from "../assets/testimonials-henry-c.webp";
+import cardOne from "../assets/barbering-services.webp";
+import cardTwo from "../assets/Fake-Jessie.webp";
+import cardThree from "../assets/Fake-Aaron.webp";
+import Gallery from "../components/Gallery";
+
+---
+
+<Layout title='HKL Studio'>
+	<main class=""> 
+		<section class='w-full '>
+			<Image src={heroImage} widths={[300,  1060,  1460,  1780,  2048, heroImage.width]} sizes="100vw" loading="eager"
+			alt="OUTBACK EDGE STUDIO" class='w-full object-cover md:h-[50vh] lg:h-[70vh] 2xl-[120vh]  bg-blend-darken   grayscale' />
+		</section>
+
+		<section class='max-w-7xl mx-auto flex flex-col justify-center py-8 px-4'>
+			<Card
+				title='Barbering Services'
+				body="Outback Edge Barber Shop delivers specialized barbering services for men, blending classic cuts with unique historical and period styles. Jack's dedication and 20 years of experience shine through in his meticulous attention to detail, guaranteeing a distinctive and personalized look. Whether seeking a modern trim or a vintage-inspired style, clients depart feeling confident and pleased with their bespoke haircut."
+				href='/services'
+				imageSource={cardOne}
+				altText='Barbering Services'
+			/>
+			<Card
+				title='Beard Sculpting and Grooming'
+				body="Where precision meets artistry in the realm of men's grooming. Our skilled barbers wield clippers and razors to chisel your beard into its ideal form, applying top-shelf oils and balms that condition and tame even the wildest of facial hair. Step up your game with a grooming experience that's as sharp and defined as your individual style."
+				href='/services'
+				reversed='false'
+				imageSource={cardTwo}
+				altText='Bowen Therapy'
+			/>
+			<Card
+				title='Precision Skin Fades'
+				body="Your head is our canvas. Our barbers specialize in the gradient perfection of skin fades, blending seamless transitions from bare skin to textured length with unmatched skill. This service isn't just a cut; it's a crafted experience tailored to highlight your features and personal style. Equip yourself with a look that's as sharp and clean as your ambitions."
+				href='/services'
+				imageSource={cardThree}
+				altText='Precision Skin Fades'
+			/>
+		</section>
+
+		
+		<section class='relative'>
+			<Gallery />
+		</section>
+		<section class='py-8 px-4'>
+			<div class='text-center my-4 xl:my-16'>
+				<h1 class='text-3xl md:text-4xl xl:text-5xl font-semibold'>Testimonials</h1>
+			</div>
+			<div class='flex flex-col space-y-8 xl:flex-row xl:space-y-0 xl:mx-48 gap-8 xl:gap-12 justify-center'>
+				<Testimonials
+					title='Issac Adams'
+					body="I've been Jack's regular at Outback Edge for 4 years, never finding anyone who matches his skill in beard grooming. From day one, he's made me feel at ease, and the compliments on my beard are endless. His craftsmanship ensures my look is always sharp, lasting until the next visit. Jack adds to the experience with coffee, tea, or even a beer, making every appointment more than just a trim—it's a luxury. His professionalism and attention to detail are beyond what I expected from a barber, and I'm thoroughly impressed."
+					imageSrc={testOne}
+					altText='Issac Adams Testimonial'
+				/>
+				<Testimonials
+					title='Henry C'
+					body="I've been a regular of Jack at Outback Edge for his exceptional skill in crafting skin fades with custom tracks. Jack's attention to detail and creativity have consistently impressed me, earning compliments everywhere I go. His ability to combine sharp fades with personalized designs sets him apart. The added touch of coffee or a cold beer makes each visit more than just a haircut—it's an experience. Jack's commitment to excellence and customer satisfaction is unparalleled."
+					imageSrc={testTwo}	
+					altText='Henry C Testimonial'
+				/>
+			</div>
+		</section>
+	</main>
+</Layout>

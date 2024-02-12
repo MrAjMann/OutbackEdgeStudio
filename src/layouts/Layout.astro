@@ -1,0 +1,58 @@
+---
+// import Navbar from "../components/Navbar.jsx";
+import Header from "../components/Header";
+import Footer from "../components/Footer.astro";
+import "../styles/animations.css";
+
+
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang='en' class=' mx-auto'>
+	<head>
+		<meta charset='UTF-8' />
+		<meta
+			name='description'
+			content='Outback Edge Barber is a modern barbershop originaly located outback Australia now residing in Toowoomba QLD. We offer a range of services including haircuts, beard trims, and hot towel shaves. We also offer a range of products to keep you looking sharp.'
+		/>
+		<meta name='viewport' content='width=device-width' />
+		<link rel='icon' type='image/svg+xml' href='/favicon.ico' />
+		<title>{title}</title>
+	</head>
+	<body>
+		<Header  />
+		<slot />
+		<Footer />
+	</body>
+</html>
+<style is:global>
+	:root {
+		height: 100%;
+		
+		--accent: 124, 58, 237;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			#da62c4 30%,
+			white 60%
+		);
+	}
+	* {
+		/* outline: 1px solid blue; */
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background-color: #f6f6f6;
+		
+	}
+	code {
+		font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+			DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+	}
+</style>

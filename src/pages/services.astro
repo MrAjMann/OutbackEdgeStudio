@@ -1,0 +1,264 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import heroImage from "../assets/barberShop.webp";
+---
+
+<Layout title='HKL Studio - SERVICES'>
+	<main class=''>
+		<section class='w-full'>
+			<Image
+				src={heroImage}
+				widths={[300, 1060, 1460, 1780, 2048, heroImage.width]}
+				sizes='100vw'
+				loading='eager'
+				alt='OUTBACK EDGE STUDIO'
+				class='w-full object-cover md:h-[50vh] lg:h-[70vh] 2xl-[120vh] bg-blend-darken grayscale'
+			/>
+			<div
+				class='absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center'
+			>
+				<h1 class="text-white mt-48 mb-28 text-7xl font-['Infer']">SERVICES</h1>
+			</div>
+		</section>
+
+		<section class='xl:mx-48'>
+			<div
+				class=` my-6 xl:my- flex flex-col justify-center items-center gap-0 xl:gap-48 `
+			>
+				<div
+					class='my-4 px-12 xl:px-0 flex flex-col justify-center align-middle items-center xl:items-start xl:max-w-xl'
+				>
+					<div class='my-8'>
+						<h2 class='font-semibold text-3xl'>Barber services</h2>
+						<div class='w-full xl:w-full bg-black h-[2px] my-1 opacity-30'>
+						</div>
+					</div>
+					<div class='flex flex-col gap-8 w-full'>
+						<!-- Hairdressing Services Card 1 -->
+						<div class='flex flex-col'>
+							<h2 class='font-medium text-2xl opacity-80 italic'>
+								Master Barber Cuts for Men
+							</h2>
+							<div class='mx-4'>
+								<p
+									class='flex justify-center items-center font-normal max-w-xl my-2'
+								>
+									Whether you're gearing up for a bold transformation or aiming
+									to refine your look with a precision cut and style, you can
+									count on our expertise for a customized approach. Settle into
+									the masculine ambiance of our barbershop as we conduct a
+									thorough consultation and craft a bespoke grooming plan
+									tailored to your individual hair and style needs.
+								</p>
+								<p
+									class='flex justify-center items-center font-normal max-w-xl my-2'
+								>
+									Our proficiency spans a broad spectrum of barbering services,
+									including signature men's precision cuts, masterful skin
+									fades, custom beard sculpting, and more. Whether you're
+									seeking a striking new profile or subtle sophistication, our
+									commitment is to forge a distinct appearance that elevates
+									your presence and bolsters your confidence.
+								</p>
+							</div>
+						</div>
+
+						<div class='w-full xl:w-full bg-black h-[2px] my-1 opacity-10'>
+						</div>
+
+						<!-- Hairdressing Services Card 2 -->
+						<div class='flex flex-col'>
+							<h2 class='font-medium text-2xl opacity-80 italic'>Hair Foils</h2>
+							<div class='mx-4'>
+								<p
+									class='flex justify-center items-center my-2 font-normal max-w-xl'
+								>
+									Our "Fade and Blade Sculpt" is a testament to the art of
+									barbering, combining the sharp distinction of a skin fade with
+									the detailed craftsmanship of beard sculpting. Whether you're
+									aiming for subtle sophistication or a striking new profile, we
+									tailor our service to your vision. We can accentuate the fade
+									with detailed blade work or integrate unique designs that
+									elevate your personal style.
+								</p>
+								<p
+									class='flex justify-center items-center my-2 font-normal max-w-xl'
+								>
+									We encourage you to explore our portfolio of cuts, fades,
+									beard sculpts, and styling for various occasions. Viewing our
+									work is the best way to determine if our "Fade and Blade
+									Sculpt" service aligns with your desired outcome. Let us guide
+									you through a gradual yet impactful change that enhances your
+									look with depth and character.
+								</p>
+							</div>
+
+							<h2 class='font-medium text-xl opacity-80 italic mt-4'>
+								Pick Your Signature Service to Match Your Style
+							</h2>
+							<div class='mx-4'>
+								<p
+									class='flex justify-center items-center my-2 font-normal max-w-xl'
+								>
+									Our experienced and expert barber crew is dedicated to
+									delivering services that will exceed your expectations. Feel
+									free to explore our portfolio of diverse cuts and grooming
+									styles for inspiration, bring a picture to share your vision,
+									or let our proficient barbers steer you toward a style that
+									suits you best.
+								</p>
+								<ul
+									class='!list-disc flex justify-center items-center mx-4 flex-col gap-4 my-4 font-normal max-w-xl'
+								>
+									<li>
+										We can craft a sleek men's fade or precisely groom your
+										beard, tailoring our services to your preferred look. If
+										it's a sharp, short haircut or a detailed beard sculpt
+										you're after, our skilled barbers will execute it to
+										perfection and offer expert tips on maintaining your style
+										until your next visit.
+									</li>
+									<li>
+										Regardless of your style aspirations, we provide a variety
+										of top-notch men's grooming services, including precision
+										cuts, skin fades, and custom beard shaping, to help you
+										achieve the ideal look. Whether you're aiming for a bold
+										transformation with a razor-sharp fade, seeking to refine
+										your beard with expert sculpting, or simply maintaining a
+										classic cut, our expertise is at your disposal. We utilize
+										high-quality grooming products and techniques to ensure your
+										hair and beard not only look exceptional but are also in
+										optimal condition.
+									</li>
+									<li>
+										Enhance your look with our premium grooming services,
+										focusing on creating a distinctive style that stands out.
+										Our barbers are adept at integrating precision cuts with
+										expert grooming techniques to elevate your presence and
+										ensure maximum impact.
+									</li>
+								</ul>
+							</div>
+
+							<h2 class='font-medium text-xl opacity-80 italic mt-4'>
+								Achieve your grooming ambitions and enjoy personalized attention with our expert one-on-one service.
+							</h2>
+							<div class='mx-4'>
+								<p
+									class='flex justify-center items-center my-2 font-normal max-w-xl'
+								>
+								We dedicate time to understand your preferences, crafting a customized grooming solution that meets your specific needs, ensuring an outstanding result. Whether you're looking for a fresh fade, aiming for a meticulously sculpted beard, or wanting to embrace the latest in men's hair trends, our commitment to professional service remains unwavering. Our team, fully certified and skilled, led by our principal barber, guarantees top-quality cuts and grooming services for every client.
+								</p>
+								<p
+									class='flex justify-center items-center my-2 font-normal max-w-xl'
+								>
+								</p>
+							</div>
+						</div>
+
+						<div class='w-full xl:w-full bg-black h-[2px] my-1 opacity-10'>
+						</div>
+						<!-- Hairdressing Services Card 3 -->
+						<div class='flex flex-col'>
+							<h2 class='font-medium text-2xl opacity-80 italic'>
+								Beard Enhancements
+							</h2>
+							<div class='mx-4'>
+								<p
+									class='flex justify-center items-center my-2 font-normal max-w-xl'
+								>
+									
+Ever felt your beard isn't quite full or thick enough? Instead of waiting for it to potentially fill in over time, our shop offers a swift solution with Beard Enhancements. Specializing in this unique service, we can enhance the volume and shape of your beard with ease. Utilizing high-quality, natural-looking materials, you can groom and style your enhanced beard as usual, with just a bit of extra care at home to keep it in prime condition.
+								</p>
+								<p
+									class='flex justify-center items-center my-2 font-normal max-w-xl'
+								>
+								Achieve a standout beard with our Beard Enhancements. Our barbers will assist you in selecting the perfect density and style to match your look, providing all the necessary products and guidance for you to maintain your enhanced beard at home. With our expertise, you'll have everything you need to sport the impressive, full beard you've always wanted.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class='w-full bg-black h-[2px] my-1 opacity-10'></div>
+
+		
+		
+
+		<!-- Body Waxing -->
+		<section class='xl:mx-48'>
+			<div
+				class=`my-6 xl:my- flex flex-col justify-center items-center gap-0 xl:gap-48 `
+			>
+				<div
+					class='my-4 px-12 xl:px-0 flex flex-col justify-center align-middle items-center xl:items-start xl:max-w-xl'
+				>
+					<div class='my-8'>
+						<h2 class='font-semibold text-3xl'>Head and Beard Deep Cleanse</h2>
+						<div class='w-full xl:w-full bg-black h-[2px] my-1 opacity-30'>
+						</div>
+					</div>
+
+					<div class='flex flex-col gap-8 w-full'>
+						<!-- Body Waxing Card 1 -->
+						<div class='flex flex-col'>
+							<div class='mx-4'>
+								<p
+									class='flex justify-center items-center my-2 font-normal max-w-xl'
+								>
+								The Head and Beard Deep Cleanse offers a refreshing, thorough clean, eliminating dirt, oil, and buildup without the harshness of traditional soap or shampoo. Unlike regular washing, this specialized treatment provides a deep cleanse that rejuvenates the skin and hair follicles beneath your beard and on your scalp, promoting healthier growth and preventing common issues like dandruff and itchiness. Regular deep cleansing sessions can transform the texture and appearance of your hair and beard, making them softer and more manageable over time. Proper skin and hair preparation before the cleanse, followed by the right aftercare, ensures the most effective and lasting results from this luxurious grooming treatment.
+								</p>
+								<p
+									class='flex justify-center items-center my-2 font-normal max-w-xl'
+								>
+								At our Outback Edge Studio's, our skilled barbers offer the Head and Beard Deep Cleanse to ensure you maintain a clean, well-groomed appearance. With our comprehensive grooming service, you can schedule your sessions to fit your routine, targeting your hair and beard's specific needs for a thorough cleanse that leaves you feeling refreshed and revitalized.
+								</p>
+							</div>
+
+							<h2 class='font-medium text-xl opacity-80 italic mt-4'>
+								Products Utilized for Head and Beard Deep Cleanse
+							</h2>
+							<div class='mx-4'>
+								<p
+									class='flex justify-center items-center my-2 font-normal max-w-xl'
+								>
+									
+For the Head and Beard Deep Cleanse, we offer a variety of high-quality cleansing products, each selected for its unique benefits. Our barbers carefully choose the appropriate products based on your skin type, beard density, length, and the level of cleansing needed. The formulations of our products are specifically designed to cater to all skin types, including those that are sensitive or prone to irritation, ensuring a thorough and gentle cleanse every time.
+								</p>
+
+								<ul
+									class='!list-disc flex justify-center items-center mx-4 flex-col gap-4 my-4 font-normal max-w-xl'
+								>
+									<li>
+										The warmth of the water used in our Head and Beard Deep Cleanse is beneficial for sensitive skin, as it helps to open the pores on the scalp and face. This process allows for a more effective removal of dirt and oil from the hair follicles, ensuring a thorough cleanse without irritation.
+									</li>
+									<li>
+										In our Head and Beard Deep Cleanse, a specialized cleansing solution is gently applied to the hair and skin. This solution is designed to break down and dissolve buildup without stripping natural oils. Instead of cloth strips, we use soft, gentle brushes and combs to work the product through your hair and beard, ensuring even coverage and deep penetration. This method is particularly effective for treating both the scalp and facial hair, leaving large areas refreshed and revitalized.
+									</li>
+									<li>
+										For targeted areas within the Head and Beard Deep Cleanse, we use specific treatments designed for precision and care, similar to the selectivity of hard wax for facial areas. These treatments are adept at addressing the unique needs of the eyebrows, mustache, and any specific sections of the beard requiring extra attention. Our products are formulated to bind to and effectively remove dirt and buildup without leaving any residue, ensuring a clean, refreshed look that focuses on precision without compromising the skin's natural balance.
+									</li>
+								</ul>
+								<p
+									class='flex justify-center items-center my-2 font-normal max-w-xl'
+								>
+								If you have sensitivities or specific concerns about ingredients, it’s important to inform your barber in advance. This allows us to select the most suitable cleansing products for your skin and hair type, ensuring a comfortable and effective deep cleanse session without any adverse reactions.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class='flex justify-center mx-4'>
+			<h4 class='font-medium opacity-80 italic mt-4'>
+				
+We're excited to welcome you soon at Outback Edge Studio's for your next grooming session.
+			</h4>
+		</div>
+		<div class='w-full bg-black h-[2px] my-1 opacity-10'></div>
+	</main>
+</Layout>

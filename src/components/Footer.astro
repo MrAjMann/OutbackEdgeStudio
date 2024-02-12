@@ -1,0 +1,63 @@
+---
+import { Icon } from 'astro-icon/components'
+
+const date = new Date();
+let currentYear = date.getFullYear();
+---
+
+<section
+	class='bg-black h-full text-white flex flex-col justify-center items-center mt-4 md:my-16 w-full overflow-hidden 2xl:pb-2'
+>
+	<div class='flex justify-center my-8 md:my-16'>
+		<h1 class='px-4 md:px-0 text-center text-2xl md:text-3xl font-semibold'>
+			Claim Your Chair for the Ultimate Skin Fade or Beard Sculpting Experience
+		</h1>
+	</div>
+	<div class='text-center'>
+		<p class='px-4 md:px-0 max-w-[600px]'>
+			Get in touch with Jack for a custom quote on your next standout cut. Drop him a line through Facebook Messenger or give him a ring. Take the first step toward your sharp, new look today!
+		</p>
+	</div>
+	<div class='mt-8'>
+		<div
+			class='flex flex-col md:flex-row justify-center items-center gap-6 md:gap-14'
+		>
+			<div class='text-center'>
+				<p class='text-xl semi-bold'>Email:</p>
+				<a
+					class='text-md hover:opacity-70'
+					href='mailto:outbackedgestudios@email.com'
+					target='_blank'>outbackedgestudios@email.com</a
+				>
+			</div>
+			<div class='text-center'>
+				<p class='text-xl semi-bold'>Phone:</p>
+				<a
+					class='text-md hover:opacity-70'
+					href='tel:0429864783'
+					target='_blank'>0456-563-783</a
+				>
+			</div>
+			<div class='text-center'>
+				<p class='text-xl semi-bold'>Address:</p>
+				<p>25 MadeUp Dr Toowoomba</p>
+			</div>
+		</div>
+		<div class='flex flex-row justify-center gap-8 my-6 md:mr-6'>
+			<a href='https://www.amwebsolutions.com.au/' target='_blank' aria-label="Link to Facebook">
+				<Icon name='mdi:facebook'  size={30}/>
+			</a>
+			<a href='https://www.amwebsolutions.com.au/ target='_blank' aria-label="Link to instagram">
+				<Icon name='mdi:instagram' size={30}/>
+			</a>
+		</div>
+	</div>
+	<div class='flex flex-col md:flex-row items-center md:gap-12'>
+		<p>©{currentYear} OUTBACK EDGE STUDIO All Right Reserved.</p>
+		<p class='hidden md:flex'>
+			Website By:<a href='https://www.amwebsolutions.com.au/' target='_blank'
+				>&nbsp;AM Website Solutions</a
+			>
+		</p>
+	</div>
+</section>

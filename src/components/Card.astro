@@ -1,0 +1,40 @@
+---
+
+
+import { Image } from "astro:assets";
+
+interface Props {
+	title: string;
+	body: string;
+	href: string;
+	imageSource: any;
+	altText: string;
+	reversed?: string;
+}
+
+
+
+const { href, title, body, imageSource,altText, reversed } = Astro.props;
+---
+
+<li class={`list-none mx-auto my-6 flex flex-col ${reversed ? 'xl:flex-row-reverse' : 'xl:flex-row'} gap-8 xl:gap-48 `}>
+	<div class="overflow-hidden flex justify-center xl:justify-start relative ">
+		<Image  src={imageSource} widths={[453, 778, 906,1130,1320,1490,1640, 1780, 1900, 2020, 2130, imageSource.width]} sizes="100%" alt={altText} class="w-full  xl:max-w-2xl 2xl:max-w-2xl 4xl:max-w-4xl  px-4 lg:px-0 rounded-lg " />
+	  </div>
+	<div class="px-4 xl:px-0 flex flex-col justify-center items-center xl:items-start gap-8">
+	  <h2 class="font-semibold text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl">
+		{title}
+	  </h2>
+	  <p class="text-center xl:text-left text-sm md:text-base xl:text-lg 2xl:text-xl max-w-2xl xl:max-w-4xl 2xl:max-w-6xl ">
+		{body}
+	  </p>
+	  <div class="group cursor-pointer bg-transparent hover:bg-black hover:text-white transition ease-in-out duration-500 flex items-center justify-center w-36 ring-1 ring-gray-800 h-12 rounded-md px-4 py-2">
+		<a href={href} class="flex items-center justify-center w-full h-full text-center rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-white"  aria-label={`Find out more about ${title}`}>
+		  Find out more
+		</a>
+	  </div>
+	</div>
+  </li>
+	
+
+
