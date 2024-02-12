@@ -20,7 +20,7 @@ const Navbar = () => {
 				}`}
 			>
 				<div className='flex w-full justify-between items-center mx-4 '>
-						<a href='/' className='flex items-center text-2xl font-[Oswald] text-white  mt-8'>
+						<a href='/' className='flex items-center text-lg sm:text-xl md:text-2xl font-[Oswald] text-white  mt-8'>
 							OUTBACK EDGE STUDIO
 						</a>
 
@@ -44,7 +44,7 @@ const Navbar = () => {
 			{/* Desktop View */}
 			<div className="hidden fixed left-0 w-full p-8 z-10  h-18 max-h-20  lg:flex items-center justify-center  bg-[#020202d1] text-white mix-blend-luminosity font-['Inter']"  >
 				<ul className='relative flex justify-center align-middle items-center gap-16 '> 
-					<li className='hover:border-b   py-2 tranisition ease-in-out font-semibold' >
+					<li className='hover:border-b py-2 tranisition ease-in-out font-semibold' >
 						<a href='/'>HOME</a>
 					</li>
 					{/* <div className=' border-l border-gray-500  w-[2px] '></div> */}
