@@ -68,7 +68,7 @@ const NavMenu = () => {
 						initial='initial'
 					>
 						<div class='flex flex-row justify-center gap-8 my-12 md:mr-6'>
-							<a href='https://www.facebook.com/HKLStudio' target='_blank'>
+							<a href='/' target='_blank'>
 								<img
 									src={facebookIcon.src}
 									alt='Facebook icon'
@@ -77,7 +77,7 @@ const NavMenu = () => {
 									loading="lazy"
 								/>
 							</a>
-							<a href='https://www.facebook.com/HKLStudio' target='_blank'>
+							<a href='/' target='_blank'>
 								<img
 									src={instagramIcon.src}
 									alt='Instagram Icon'
