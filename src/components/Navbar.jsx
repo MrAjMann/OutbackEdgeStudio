@@ -15,12 +15,12 @@ const Navbar = () => {
 		<nav className='w-full'>
 			{/* Mobile View */}
 			<div
-				className={`lg:hidden fixed flex xl:py-5 px-3 w-full h-[4.5rem] z-50 transition-colors ${
+				className={`lg:hidden fixed bg-[#020202d1] flex xl:py-5 px-3 w-full h-[4.5rem] z-50 transition-colors ${
 					isActive ? "opacity-90" : "opacity-75"
 				}`}
 			>
 				<div className='flex w-full justify-between items-center mx-4 '>
-						<a href='/' className='flex items-center text-lg sm:text-xl md:text-2xl font-[Oswald] text-white  mt-8'>
+						<a href='/' className='flex items-center text-lg sm:text-xl md:text-2xl font-[Oswald] text-white  mt-2'>
 							OUTBACK EDGE STUDIO
 						</a>
 
