@@ -9,62 +9,62 @@ import imageSeven from "../assets/Fake-Aaron.webp";
 export const imageData = [
 	{
 		imageSrc: imageOne.src,
-		imageAlt: "Hello",
+		imageAlt: imageOne.src,
 		imageIndex: 0,
 	},
 	{
 		imageSrc: imageTwo.src,
-		imageAlt: "",
+		imageAlt: imageTwo.src,
 		imageIndex: 1,
 	},
 	{
 		imageSrc: imageThree.src,
-		imageAlt: "",
+		imageAlt: imageThree.src,
 		imageIndex: 2,
 	},
 	{
 		imageSrc: imageFour.src,
-		imageAlt: "",
+		imageAlt: imageFour.src,
 		imageIndex: 3,
 	},
 	{
 		imageSrc: imageFive.src,
-		imageAlt: "",
+		imageAlt: imageFive.src,
 		imageIndex: 4,
 	},
 	{
 		imageSrc: imageSix.src,
-		imageAlt: "Hello",
+		imageAlt: imageSix.src,
 		imageIndex: 5,
 	},
 	{
 		imageSrc: imageSeven.src,
-		imageAlt: "",
+		imageAlt: imageSeven.src,
 		imageIndex: 6,
 	},
 	{
 		imageSrc: imageOne.src,
-		imageAlt: "",
+		imageAlt: imageOne.src,
 		imageIndex: 7,
 	},
 	{
 		imageSrc: imageTwo.src,
-		imageAlt: "",
+		imageAlt: imageTwo.src,
 		imageIndex: 8,
 	},
 	{
 		imageSrc: imageThree.src,
-		imageAlt: "",
+		imageAlt: imageThree.src,
 		imageIndex: 9,
 	},
 	{
 		imageSrc: imageFour.src,
-		imageAlt: "",
+		imageAlt: imageFour.src,
 		imageIndex: 10,
 	},
 	{
 		imageSrc: imageFive.src,
-		imageAlt: "",
+		imageAlt: imageFive.src,
 		imageIndex: 11,
 	},
 ];
