@@ -32,19 +32,20 @@ import five from "../assets/Fake-Justin.webp";
         <div class="grid grid-cols-1 xl:grid-cols-3 xl:mx-48 gap-4 my-24 px-2 ">
             {Images.map(image => 
                 <div class="bg-cover ring-1 ring-slate-500 rounded-md object-fit">
-                    <Image  src={image} alt={`${image.src}`} class=" w-full h-full max-h-[600px]" />   
+                    <Image  src={image} alt={`${image.src}`} class=" w-full h-full aspect-square md:max-h-[600px]" />   
                 </div>
             )}
             {Images.map(image => 
-                <div class="bg-cover ring-1 ring-slate-500 rounded-md">
-                    <Image  src={image} alt="" class="aspect-[9/16] max-h-[600px]" />   
+                <div class="bg-cover ring-1 ring-slate-500 rounded-md object-fit">
+                    <Image  src={image} alt={`${image.src}`} class=" w-full h-full aspect-square md:max-h-[600px]" />   
                 </div>
             )}
             {Images.map(image => 
-                <div class="bg-cover ring-1 ring-slate-500 rounded-md">
-                    <Image  src={image} alt="" class="aspect-[9/16] max-h-[600px]" />   
+                <div class="bg-cover ring-1 ring-slate-500 rounded-md object-fit">
+                    <Image  src={image} alt={`${image.src}`} class=" w-full h-full aspect-square md:max-h-[600px]" />   
                 </div>
             )}
+           
         </div>
     </main>
 </Layout>

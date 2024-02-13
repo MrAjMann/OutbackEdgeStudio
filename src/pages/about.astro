@@ -1,6 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import heroImage from "../assets/Fake-Justin.webp";
+import imageOne from "../assets/Fake-Antonne.webp";
+import imageTwo from "../assets/Fake-James.webp";
+import imageThree from "../assets/Fake-Cory.webp";
 import { Image } from "astro:assets";
 ---
 
@@ -16,9 +19,9 @@ import { Image } from "astro:assets";
 <!-- Top -->
 
         <div>   
-            <li class=`list-none xl:mx-48 my-6 xl:my-16 flex flex-col xl:flex-row gap-0 xl:gap-48 `>
-                <div class="overflow-hidden flex justify-center">
-                    <Image src={heroImage} alt="Photo of Kelly" class="min-w-[300px] aspect-[9/16] px-12 lg:px-0  max-h-[360px] h-full max-w-[400px]   sm:max-h-[460px]  rounded-md"  >
+            <li class=`list-none xl:mx-48 my-6 xl:my-16 flex flex-col xl:flex-row gap-0 xl:gap-48 justify-center`>
+                <div class="bg-cover ring-1 ring-slate-500 rounded-md object-fit">
+                    <Image src={imageOne} alt={imageOne.src} class="w-full h-full aspect-square md:max-h-[600px]"  >
                     </div>
                     <div class="my-4 px-12 xl:px-0 flex flex-col justify-center align-middle items-center xl:items-start xl:max-w-lg"> 	
                         
@@ -42,9 +45,9 @@ import { Image } from "astro:assets";
 
         <div>   
 
-            <li class=`list-none xl:mx-48 my-6 xl:my-16 flex flex-col xl:flex-row-reverse gap-0 xl:gap-48 `>
-                <div class="overflow-hidden flex justify-center">
-                    <Image src={heroImage} alt="Photo of Kelly" class="min-w-[300px] aspect-[9/16] px-12 lg:px-0  max-h-[360px] h-full max-w-[400px]   sm:max-h-[460px]  rounded-md"  >
+            <li class=`list-none xl:mx-48 my-6 xl:my-16 flex flex-col xl:flex-row-reverse gap-0 xl:gap-48 justify-center`>
+                <div class="bg-cover ring-1 ring-slate-500 rounded-md object-fit">
+                    <Image src={imageTwo} alt={imageTwo.src} class="w-full h-full aspect-square md:max-h-[600px]"  >
                     </div>
                     <div class="my-4 px-12 xl:px-0 flex flex-col justify-center align-middle items-center xl:items-start xl:max-w-lg"> 	
                         
@@ -65,9 +68,9 @@ import { Image } from "astro:assets";
     
         <div>   
 
-            <li class=`list-none xl:mx-48 my-6 xl:my-16 flex flex-col xl:flex-row gap-0 xl:gap-48 `>
-                <div class="overflow-hidden flex justify-center">
-                    <Image src={heroImage} alt="Photo of Kelly" class="min-w-[300px] aspect-[9/16] px-12 lg:px-0  max-h-[360px] h-full max-w-[400px]   sm:max-h-[460px]  rounded-md"  >
+            <li class=`list-none xl:mx-48 my-6 xl:my-16 flex flex-col xl:flex-row gap-0 xl:gap-48 justify-center`>
+                <div class="bg-cover ring-1 ring-slate-500 rounded-md object-fit">
+                    <Image src={imageThree} alt={imageThree.src} class="w-full h-full aspect-square md:max-h-[600px]"  >
                     </div>
                     <div class="my-4 px-12 xl:px-0 flex flex-col justify-center align-middle items-center xl:items-start xl:max-w-lg"> 	
                         
